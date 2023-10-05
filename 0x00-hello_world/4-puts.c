@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
-*main - this is the main function
-*Return (0)
+* main - Program entry point
+* Description - Prints "Programming is like building a multilingual puzzle
+* Return: 0 - Success
 */
 int main(void)
 {
