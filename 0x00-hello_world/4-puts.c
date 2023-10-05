@@ -1,4 +1,5 @@
 #include<stdio.h>
+/*This is main*/
 int main(void)
 {
 /*Printing a string*/
