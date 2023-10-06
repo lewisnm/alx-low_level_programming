@@ -20,8 +20,8 @@ int main(void)
 
 	if (firstdigit != 8 || seconddigit != '9')
 	{
-	putchar(',')
-	putchar(' ')
+	putchar(',');
+	putchar(' ');
 	}
 	seconddigit++;
 	}
