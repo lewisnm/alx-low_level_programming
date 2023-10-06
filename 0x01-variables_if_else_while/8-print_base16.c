@@ -6,7 +6,9 @@
 */
 int main(void)
 {
-	for (int i = 0; i < 16; i++)
+	int i = 0;
+
+	while (i < 16)
 	{
 	if (i < 10)
 	{
@@ -16,7 +18,7 @@ int main(void)
 	{
 	putchar('a' + (i - 10));
 	}
-
+	i++;
 	}
 
 	putchar('\n');
