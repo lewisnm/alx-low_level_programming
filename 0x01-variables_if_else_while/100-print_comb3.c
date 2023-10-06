@@ -18,7 +18,7 @@ int main(void)
 	putchar(firstdigit);
 	putchar(seconddigit);
 
-	if (firstdigit == '8' && seconddigit == '9')
+	if (firstdigit == '8' || seconddigit == '9')
 	{
 	putchar(',');
 	putchar(' ');
