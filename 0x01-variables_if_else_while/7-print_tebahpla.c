@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 * main - Entry point
-* Description - displays all letters from a-z in lowercase
+* Description - displays the alphabet in reverse
 * Return: (0) success
 */
 int main(void)
