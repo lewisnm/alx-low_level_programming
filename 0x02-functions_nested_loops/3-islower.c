@@ -8,9 +8,8 @@
 
 int _islower(int c)
 {
-	int c;
 
-	if(c = 97; c < 123; c++)
+	if(c = 97)
 
 		return (0);
 	else
