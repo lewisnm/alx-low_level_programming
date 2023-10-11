@@ -1,20 +1,25 @@
 #include <stdio.h>
+#include <unistd.h>
+#include <string. h>
 /**
  * main - Entry point
- * description - code prints _putchar
+ * Description - code prints _putchar
  * Return - (0) success
  */
 
 int main(void)
 {
 
-	char word[] = "_putchar";
+	const char *word = "_putchar";
 
-	for (int a = 0; word[a] != '\0'; a++)
+	size_t len = strlen(word);
+
+	ssize_t bytes_written = write(STDOUT_FILENO, word, len);
+
+	if (bytes_written != (ssize_t)len)
 	{
-		putchar(word[a]);
+
 	}
 
-	putchar('\n');
-	return (0);
+return (0);
 }
