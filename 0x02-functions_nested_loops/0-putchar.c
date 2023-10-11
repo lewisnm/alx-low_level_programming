@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
-#include <string. h>
+
 /**
  * main - Entry point
  * Description - code prints _putchar
@@ -12,14 +12,9 @@ int main(void)
 
 	const char *word = "_putchar";
 
-	size_t len = strlen(word);
+	int word_length = 5;
 
-	ssize_t bytes_written = write(STDOUT_FILENO, word, len);
+	write(1, word, word_length);
 
-	if (bytes_written != (ssize_t)len)
-	{
-
-	}
-
-return (0);
+	return (0);
 }
