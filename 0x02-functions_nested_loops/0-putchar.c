@@ -10,9 +10,9 @@
 int main(void)
 {
 
-	const char *word = "_putchar";
+	const char *word = "_putchar\n";
 
-	int word_length = 5;
+	int word_length = 9;
 
 	write(1, word, word_length);
 
