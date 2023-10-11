@@ -20,15 +20,3 @@ void print_alphabet_x10(void)
 	}
 	_putchar('\n');
 }
-
-/**
-* main - calls the variable
-*
-* Return: 0 success
-*/
-
-int main(void)
-{
-	print_alphabet_X10();
-	return (0);
-}
