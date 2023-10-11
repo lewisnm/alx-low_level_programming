@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <unistd.h>
-
 /**
- * main - Entry point
- * Description - code prints _putchar
- * Return - (0) success
+ * * main - Entry point
+ * * Description - code prints putchar using write function
+ * * Return: (0) success
  */
 
 int main(void)
