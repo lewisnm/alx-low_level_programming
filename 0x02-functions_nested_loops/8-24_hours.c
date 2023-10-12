@@ -22,7 +22,7 @@ void jack_bauer(void)
 
 			if (hour != 23 || minute != 59)
 			{
-				_putchar('\n')
+				_putchar('\n');
 			}
 		}
 	}
