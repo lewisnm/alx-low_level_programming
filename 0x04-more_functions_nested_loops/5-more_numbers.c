@@ -13,9 +13,9 @@ void more_numbers(void)
 
 	for (x = 0; x < 10; x++)
 	{
-		for (z = 0; z <= 14; z++)
+		for (z = NUL; z < SI; z++)
 		{
-			_putchar(48 + z);
+			_putchar(z);
 		}
 		_putchar('\n');
 	}
