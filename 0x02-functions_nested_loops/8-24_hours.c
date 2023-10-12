@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
 * jack_bauer - all minutes of one day
