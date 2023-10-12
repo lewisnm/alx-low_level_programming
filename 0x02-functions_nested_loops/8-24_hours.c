@@ -19,11 +19,8 @@ void jack_bauer(void)
 			_putchar(':');
 			_putchar((minute / 10) + '0');
 			_putchar((minute % 10) + '0');
-
-			if (hour != 23 || minute != 59)
-			{
-				_putchar('\n');
-			}
+			_putchar('\n');
+			
 		}
 	}
 
