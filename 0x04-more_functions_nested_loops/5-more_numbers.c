@@ -15,7 +15,7 @@ void more_numbers(void)
 	{
 		for (z = 0; z < 15; z++)
 		{
-			_putchar(z);
+			_putchar(z + '0');
 		}
 		_putchar('\n');
 	}
