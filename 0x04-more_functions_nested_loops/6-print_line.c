@@ -2,7 +2,7 @@
 /**
 * print_line - prints a line
 * @n: The number to determine the lengh of a line
-* Return: 0 success
+* Return: void
 */
 
 void print_line(int n)
@@ -19,5 +19,4 @@ void print_line(int n)
 		}
 		_putchar('\n');
 	}
-	return (0);
 }
