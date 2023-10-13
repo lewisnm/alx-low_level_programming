@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
 * print_line - prints a line
 * @n: The number to determine the lengh of a line
@@ -15,7 +16,7 @@ void print_line(int n)
 	{
 		int i;
 
-		for(i = 1; i <= n; i++)
+		for (i = 1; i <= n; i++)
 		{
 			_putchar('_');
 		}
