@@ -3,9 +3,9 @@
 /**
  * puts_half - prints half of a strings content
  *
- * @str - the pointer to where the string is
+ * @str: the pointer to where the string is
  *
- * Return - void
+ * Return:  void
  */
 
 void puts_half(char *str)
