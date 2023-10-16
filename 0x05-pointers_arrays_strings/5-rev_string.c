@@ -10,13 +10,13 @@
 
 void rev_string(char *s)
 {
+	char *start = s;
+	char *end = s;
+
 	if (s == NULL)
 	{
 		return;
 	}
-	char *start = s;
-	char *end = s;
-	char temp;
 
 	while (*end != '\0')
 	{
