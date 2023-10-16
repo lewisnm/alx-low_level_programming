@@ -9,9 +9,19 @@
  * Return: void
  */
 
+void swap(int *x, int *y);
+
 void swap_int(int *a, int *b)
 {
 
 	swap(&a, &b);
+
+}
+
+void swap(int *x, int *y)
+{
+	int temp = *x;
+	*x = *y;
+	*y = temp;
 
 }
