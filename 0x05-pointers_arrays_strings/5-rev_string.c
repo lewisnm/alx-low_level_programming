@@ -24,7 +24,7 @@ void rev_string(char *s)
 	end--;
 	while (start < end)
 	{
-		chat temp = *start;
+		char temp = *start;
 		*start = *end;
 		*end = temp;
 
