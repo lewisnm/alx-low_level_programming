@@ -5,11 +5,17 @@
  *
  * @s: the variable storing the string
  *
- * Return: void
+ * Return: length
  */
 
 int _strlen(char *s)
 {
-	char *s = str;
-	size_t length = strlen(s);
+	size_t length = 0;
+
+	while (*s != '\0')
+	{
+		length++;
+		s++;
+	}
+	return length;
 }
