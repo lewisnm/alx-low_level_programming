@@ -21,7 +21,7 @@ void puts2(char *str)
 	{
 		if (*str >= '0' && *str <= '9')
 		{
-			if (digit == digitCounter)
+			if (digitCounter == (*str - '0'))
 			{
 				putchar(*str);
 				digitCounter++;
