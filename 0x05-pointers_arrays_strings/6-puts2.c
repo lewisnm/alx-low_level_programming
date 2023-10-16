@@ -25,7 +25,7 @@ void puts2(char *str)
 
 			if (digit == digitCounter)
 			{
-				putchar(*str);
+				_putchar(*str);
 				digitCounter++;
 			}
 		}
