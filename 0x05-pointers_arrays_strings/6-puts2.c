@@ -10,6 +10,8 @@
 
 void puts2(char *str)
 {
+	int digitCounter = 0;
+
 	if (str == NULL)
 	{
 		return;
@@ -21,9 +23,10 @@ void puts2(char *str)
 		{
 			int digit = *str - '0';
 
-			if (digit % 2 == 0 && digit >= 0)
+			if (digit == digitCounter)
 			{
 				_putchar(*str);
+				digitCounter++;
 			}
 		}
 		str++;
