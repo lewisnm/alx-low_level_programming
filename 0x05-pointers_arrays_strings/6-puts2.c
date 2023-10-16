@@ -21,7 +21,7 @@ void puts2(char *str)
 		{
 			int digit = *str - '0';
 
-			if (digit % 2 == 0)
+			if (digit % 2 == 0 && digit >= 0)
 			{
 				_putchar(*str);
 			}
