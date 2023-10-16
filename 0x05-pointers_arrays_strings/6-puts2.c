@@ -21,7 +21,6 @@ void puts2(char *str)
 	{
 		if (*str >= '0' && *str <= '9')
 		{
-			int digit = *str - '0';
 
 			switch(digitCounter)
 			{
