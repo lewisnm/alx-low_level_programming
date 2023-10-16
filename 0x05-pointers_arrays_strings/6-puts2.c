@@ -23,9 +23,16 @@ void puts2(char *str)
 		{
 			int digit = *str - '0';
 
-			if (digit == digitCounter)
+			switch(digitCounter)
 			{
+				case 0:
+				case 2:
+				case 4:
+				case 6:
+				case 8:
+
 				_putchar(*str);
+				break;
 				digitCounter++;
 			}
 		}
