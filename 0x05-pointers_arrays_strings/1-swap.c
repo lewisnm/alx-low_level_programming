@@ -1,6 +1,8 @@
 #include "main.h"
 
 /**
+ * swap - whats going on under the hood
+ *
  * swap_int - swaps the values of a and b
  *
  * @a: the value to swapped
