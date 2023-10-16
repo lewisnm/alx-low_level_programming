@@ -14,8 +14,8 @@ void rev_string(char *s)
 	{
 		return;
 	}
-	char *start = str;
-	char *end = str;
+	char *start = s;
+	char *end = s;
 
 	while (*end != '\0')
 	{
