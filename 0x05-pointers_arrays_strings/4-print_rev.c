@@ -10,17 +10,17 @@
 
 void print_rev(char *s)
 {
-	int length = 0;
 	const char *end = s;
 
 	while (*end != '\0')
 	{
-		end ++;
-		length ++;
+		end++;
 	}
-	for (int i = length - 1; i >= 0; i--)
+	end--;
+	while (end >= s)
 	{
-		_putchar(str[i]);
+		_putchar(*end);
+		end--;
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
