@@ -12,9 +12,10 @@ int main(void)
 {
 	int key[100];
 	int x, sum, y;
+
 	sum = 0;
 
-	strand(time (NULL));
+	srand(time(NULL));
 
 	for (x = 0; x < 100; x++)
 	{
@@ -30,4 +31,5 @@ int main(void)
 			break;
 		}
 	}
+	return (0);
 }
