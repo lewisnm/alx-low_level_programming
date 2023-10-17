@@ -11,16 +11,16 @@
 
 void print_array(int *a, int n)
 {
-	int num = a[i];
 	int digit = num % 10;
 
 	if (a == NULL)
 	{
 		return;
 	}
-	for (int i = 0; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
-		char comma = (i < n - 1);
+		int num = a[i];
+		char comma = (i < n - 1) ? ',' : '\n';
 	}
 	while (num > 0)
 	{
