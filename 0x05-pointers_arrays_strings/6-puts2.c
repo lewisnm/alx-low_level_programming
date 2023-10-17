@@ -10,26 +10,23 @@
 
 void puts2(char *str)
 {
-	int digitCounter = 0;
+	int length = 0;
+	int z = 0;
+	char *y = str;
+	int x;
 
-	if (str == NULL)
+	while (*y != '\0')
 	{
-		return;
+		y++;
+		length++;
 	}
-
-	while (*str != '\0')
+	z = length - 1;
+	for(x = 0; x <= z; x++)
 	{
-		if (*str >= '0' && *str <= '9')
+		if (x % 2 == 0)
 		{
-			int digit = *str - '0';
-
-			if (digit == digitCounter)
-			{
-				_putchar(*str);
-				digitCounter++;
-			}
+			_putchar(str(x));
 		}
-		str++;
+		_putchar('\n')
 	}
-	_putchar('\n');
 }
