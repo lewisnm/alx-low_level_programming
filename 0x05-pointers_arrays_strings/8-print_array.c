@@ -11,25 +11,18 @@
 
 void print_array(int *a, int n)
 {
-	int digit = num % 10;
-
-	if (a == NULL)
+	if (n > 0)
 	{
+		int i = 0;
+
+		n--;
+
+		for (; i < n; i++)
+		{
+			printf("%d, ", a[i]);
+		}
+		printf("%d\n", a[i]);
 		return;
 	}
-	for (i = 0; i < n; i++)
-	{
-		int num = a[i];
-		char comma = (i < n - 1) ? ',' : '\n';
-	}
-	while (num > 0)
-	{
-		num /= 10;
-		putchar('0' + digit);
-	}
-	if (i < n - 1)
-	{
-		putchar(comma);
-		putchar(' ');
-	}
+	printf("\n");
 }
