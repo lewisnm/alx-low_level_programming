@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strncat - it concatinates two strings together
+ * _strcat - it concatinates two strings together
  *
  * @dest: first string
  * @src: second string
@@ -25,5 +25,5 @@ char *_strcat(char *dest, char *src)
 	}
 	*ptr = '\0';
 
-	return dest;
+	return (dest);
 }
