@@ -11,8 +11,8 @@
 char *leet(char *n)
 {
 	int h, r;
-	char s1 [] = "aAeEoOtTlL";
-	char s2 [] = "4433007711";
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
 
 	for (h = 0; n[h] != '\0'; h++)
 	{
