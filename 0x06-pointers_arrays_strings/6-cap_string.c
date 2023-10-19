@@ -8,34 +8,26 @@
  * Return: str  
  */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	int count = 0;
+	int a = 0, i;
+	int cspc = 13;
+	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
 
-	while (str[count])
+	while (s[a])
 	{
-		while (!(str[count] >= 'a' && str[count] <= 'z'))
+		i = 0;
+
+		while (i < cspc)
 		{
-			count++;
-			if (str[count - 1] == ' ' ||
-				str[count - 1] == '\t'||
-				str[count - 1] == '\n'||
-				str[count - 1] == ',' ||
-				str[count - 1] == ';' ||
-				str[count - 1] == '.' ||
-				str[count - 1] == '!' ||
-				str[count - 1] == '?' ||
-				str[count - 1] == '"' ||
-				str[count - 1] == '(' ||
-				str[count - 1] == ')' ||
-				str[count - 1] == '{' ||
-				str[count - 1] == '}' ||
-				count == 0)
-			{
-				str[count] -= 32;
-				count++;
-			}
+			if ((a == 0 || s[a - 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
+				s[a] -= 32;
+
+			i++;
 		}
+
+		a++;
 	}
-	return (str);
+
+	return (s);
 }
