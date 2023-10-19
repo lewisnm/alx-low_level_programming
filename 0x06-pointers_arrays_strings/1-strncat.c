@@ -7,24 +7,26 @@
  *  @src: second string
  *  @n: the limit of chars from the second string to be printed
  *
- *  Return: void
+ *  Return: dest
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-	char *ptr = dest;
+	int k, l = 0;
+	int destlen = strlen(dest);
+	int srclen = strlen(scr);
 
-	while (*ptr != '\0')
+	l = destlen;
+	if (n > srclen)
 	{
-		ptr++;
+		n = srclen;
 	}
-	while (*scr != '\0' && n > 0)
+	for (k = 0; k < n; k++)
 	{
-		*ptr = *src;
-		ptr++;
-		scr++;
-		n--;
+		dest[l++] = src[k];
 	}
-	*ptr = '\0';
+
+	dest[l] = '\0';
+
 	return (dest);
 }
