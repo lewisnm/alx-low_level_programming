@@ -13,7 +13,7 @@
 char *_strncpy(char *dest, char *src, int n);
 {
 	int k = 0;
-	int scrLength = strlen(src);
+	int srcLength = strlen(src);
 
 	for (; k < n && k < srcLength; k++)
 	{
