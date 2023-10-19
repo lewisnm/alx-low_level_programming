@@ -8,21 +8,26 @@
  * Return: n
  */
 
-char *leet(char *n)
+char *leet(char *s)
 {
-	int h, r;
-	char s1[] = "aAeEoOtTlL";
-	char s2[] = "4433007711";
+	
+	int count = 0, i;
+	int low_letters[] = {97, 101, 111, 116, 108};
+	int upp_letters[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	for (h = 0; n[h] != '\0'; h++)
+	while (*(s + count) != '\0')
 	{
-		for (r = 0; r < 10; r++)
+		for (i = 0; i < 5; i++)
 		{
-			if (n[h] == s1[r])
+			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
 			{
-				n[h] = s2(r);
+				*(s + count) = numbers[i];
+				break;
 			}
 		}
+		count++;
 	}
-	return (n);
+
+	return (s);
 }
