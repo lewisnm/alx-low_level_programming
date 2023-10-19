@@ -8,18 +8,28 @@
  * Return: l
  */
 
-char *string_toupper(char *l)
+void rev_string(char *s)
 {
-	int k;
+	int i, c, k;
+	char *a, aux;
 
-	k = 0;
-	while (l[k] != '\0')
+	a = s;
+
+	while (s[c] != '\0')
 	{
-		if (l[k] >= 'a' && l[k] <= 'z')
-		{
-			l[k] = l[k] - 32;
-			k++;
-		}
+		c++;
 	}
-	return (l);
+
+	for (k = 1; k < c; k++)
+	{
+		a++;
+	}
+
+	for (i = 0; i < (c / 2); i++)
+	{
+		aux = s[i];
+		s[i] = *a;
+		*a = aux;
+		a--;
+	}
 }
