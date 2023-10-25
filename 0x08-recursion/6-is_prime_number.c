@@ -13,7 +13,7 @@ int actual_formula(int n, int j)
 		return (1);
 	if (n % j == 0 && j > 0)
 		return (0);
-		return (actual_formula(n, j - 1));
+	return (actual_formula(n, j - 1));
 }
 
 /**
@@ -26,5 +26,5 @@ int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
-		return (actual_formula(n, n - 1));
+	return (actual_formula(n, n - 1));
 }
