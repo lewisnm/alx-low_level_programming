@@ -33,5 +33,5 @@ int actual_formula(int n, int p)
 		else
 			return (-1);
 	}
-	return (0 + power_operation(n, p + 1));
+	return (0 + actual_formula(n, p + 1));
 }
