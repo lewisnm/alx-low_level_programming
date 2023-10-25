@@ -28,7 +28,7 @@ int actual_formula(int n, int p)
 {
 	if (p % (n / p) == 0)
 	{
-		if (p* (n / p) == n)
+		if (p * (n / p) == n)
 			return (p);
 		else
 			return (-1);
