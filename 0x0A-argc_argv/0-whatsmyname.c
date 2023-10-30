@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- *
  * main - prints out the nameof the function
  *
  * @argc: indexes the arguments
  * @argv: prints out the specific string of an index
  *
- * return: success
+ * Return: success
  */
 
 int main(int argc, char *argv[])
