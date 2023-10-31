@@ -2,7 +2,7 @@
 
 /**
  * _strdup - a function that returns a pointer to a newly allocated space
- * 
+ *
  * @str: character
  *
  * Return: *pnt
@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	for (a = 0; str[a] != '\0'; a++)
 		b++;
 
-	pnt = malloc(sizeof(char)* b + 1);
+	pnt = malloc(sizeof(char) * b + 1);
 
 	if (pnt == NULL)
 		return (NULL);
