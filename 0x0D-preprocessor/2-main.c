@@ -6,7 +6,7 @@
  * ?
  */ 
 
-int main()
+int main(void)
 {
 	printf("The file name is %s\n," __FILE__);
 	return (0);
