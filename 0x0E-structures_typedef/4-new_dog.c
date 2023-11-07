@@ -1,9 +1,12 @@
 #include "dog.h"
 
-/**reates a new dog with copies of name and owner.
+/**
+ * new_dog - creates a new dog with copies of name and owner.
+ *
  * @name: Name of the dog.
  * @age: Age of the dog.
  * @owner: Owner of the dog.
+ *
  * Return: Pointer to the new dog, or NULL on failure.
  */
 dog_t *new_dog(char *name, float age, char *owner)
