@@ -1,4 +1,4 @@
-#include "main.h"
+#include "dog.h"
 
 /**
  * new_dog - creates a new dog with copies of name and owner.
