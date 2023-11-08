@@ -1,7 +1,6 @@
 #include "function_pointers.h"
 
 /**
- *
  * array_iterator - function executes given function as parameter
  * @array: an array of elements
  * @size: the size of array
@@ -15,6 +14,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 
 	if (!array || !action)
     		return;
+
 	for (j = 0; x < size; j++)
-	action(array[j]);
+		action(array[j]);
 }
