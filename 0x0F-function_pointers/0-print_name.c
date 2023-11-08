@@ -6,12 +6,12 @@
  * @name: the name being printed
  * @f: pointer to the function being printed
  *
- * Return: 0
+ * Return: nothing 
  */
 
 void print_name(char *name, void (*f)(char *))
 {
 	if (!name || !f)
-		return (0);
+		return;
 	f(name);
 }
