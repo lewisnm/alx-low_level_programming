@@ -1,25 +1,19 @@
 #include "function_pointers.h"
 
 /**
- * int_index - executes a function passed as a parameter
- * @array: points to the array
- * @size : Array size
- * @cmp: pointer to the function
  *
- * Return: first element
+ * array_iterator - function executes given function as parameter
+ * @array: an array of elements
+ * @size: the size of array
+ * @action: function of point
+ * Return: void meaning nothing is returned
  */
-
-int int_index(int *array, int size, int (*cmp)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int j;
+  unsigned int j;
 
-	if (array && cmp)
-	{
-		for (j = 0, j < size, j++)
-		{
-			if (cmp(array[j]) != 0)
-				return (j);
-		}
-	}
-	return (-1);
+  if (!array || !action)
+    return;
+  for (j = 0; x < size; j++)
+    action(array[j]);
 }
