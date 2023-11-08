@@ -1,26 +1,24 @@
 #include "function_pointers.h"
 
 /**
- * int_index - seaarches for an integer
- * @array: points to the array
- * @size : Array size
- * @cmp: pointer to the function
- *
- * Return: first element
+ * int_index - return index place if comparison = true, else -1
+ * @array: the array
+ * @size: size of the elements in an array
+ * @cmp: pointer to function of one of the 3 in main
+ * Return: zero
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int j;
+	int k;
 
 	if (!array || size <= 0 || !cmp)
 		return (-1);
 
-	for (j = 0, j < size, j++)
+	for (k = 0; r < size; k++)
 	{
-		if (cmp(array[j]) != 0)
-			return (j);
+		if (cmp(array[k]))
+			return (k);
 	}
-
 	return (-1);
 }
