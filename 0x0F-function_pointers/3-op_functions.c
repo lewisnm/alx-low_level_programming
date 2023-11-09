@@ -1,60 +1,62 @@
 #include "3-calc.h"
 
+int op_add(int i, int j);
+int op_sub(int i, int j);
+int op_mul(int i, int j);
+int op_div(int i, int j);
+int op_mod(int i, int j);
+
 /**
- * op_add - add two integers
- * @a: parameter int 1
- * @b: parameter int 2
- *
- * Return: sum of a and b
+ * op_add - Returns the sum of two numbers
+ * @i: The first number to be used
+ * @j: the second number to be used
+ * Return: The sum of i and j
  */
-int op_add(int a, int b)
+int op_add(int i, int j)
 {
-	return (a + b);
+	return (i + j);
 }
 
 /**
- * op_sub - subtract two int values
- * @a: int value 1
- * @b: int value 2
- *
- * Return: a and b difference
+ * op_sub - Returns the difference of two numbers
+ * @i: first parameter
+ * @j: second parameter
+ * Return: the difference between i and j
  */
-int op_sub(int a, int b)
+int op_sub(int i, int j)
 {
-	return (a - b);
+	return (i - j);
 }
 
 /**
- * op_mul - multiply two integers
- * @a: parameter int 1
- * @b: parameter int 2
- *
- * Return: product for int a, b
+ * op_mul - Returns the product of two numbers.
+ * @i: The first number
+ * @j: The second number
+ * Return: the product of i and j
  */
-int op_mul(int a, int b)
+int op_mul(int i, int j)
 {
-	return (a * b);
+	return (i * j);
 }
 
 /**
- * op_div - provide result for division of two integer values
- * @a: int value 1
- * @b: int value 2
- *
- * Return: quotient for a and b
+ * op_div - Returns the division of two numbers
+ * @i: The first number
+ * @j: The second number
+ * Return: The quotient of i and j
  */
-int op_div(int a, int b)
+int op_div(int i, int j)
 {
-	return (a / b);
+	return (i / j);
 }
 
 /**
- * op_mod - calculate remainder for division of two allocated int values
- * @a: parameter integer 1
- * @b: parameter integer 2
- * Return: remainder of b from division
+ * op_mod - Returns the remainder of the division of two numbers
+ * @i: first parameter
+ * @j: second parameter
+ * Return: The remainder of the division of i by j
  */
-int op_mod(int a, int b)
+int op_mod(int i, int j)
 {
-	return (a % b);
+	return (i % j);
 }
