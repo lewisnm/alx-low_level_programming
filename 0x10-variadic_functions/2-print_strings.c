@@ -4,9 +4,9 @@
  * print_strings - prints the strings given
  *
  * @separator: a string to be printed in between the strings
- * @n: number of strings being passed through  
+ * @n: number of strings being passed through
  *
- * Return: void 
+ * Return: void
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
