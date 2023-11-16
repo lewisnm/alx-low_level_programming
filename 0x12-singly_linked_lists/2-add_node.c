@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_node_end - adds the new node to the start of the heap
+ * add_node - adds the new node to the start of the heap
  * @head: pointer to the new node
  * @str: string to be added to the data part of the node
  * Return: new pointer
