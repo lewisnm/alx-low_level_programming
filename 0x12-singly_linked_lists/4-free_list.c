@@ -16,7 +16,7 @@ void free_list(list_t *head)
 		if (head->str != NULL)
 			free(head->str);
 		free(head);
-		head = temporary;
+		head = temp;
 	}
 }
 
