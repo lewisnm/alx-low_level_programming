@@ -4,17 +4,17 @@
 #include <stdio.h>
 
 /**
- * struct list_t - this is  a singly linked list
+ * struct my_list - this is  a singly linked list
  * @str: pointer to the string
  * @len: number of chars being outputed
  * @next: pointer to the next nodde
  *
  */
-typedef struct list_t
+typedef struct my_list
 {
 	char *str;
 	unsigned int len;
-	struct list_t *next;
+	struct my_list *next;
 } list_t;
 
 int _putchar(char c);
