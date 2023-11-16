@@ -7,6 +7,6 @@
 
 void __attribute__((constructor)) word_out()
 {
-	printf("You're beat! and yet, you must alllow\n,");
-	printf("I bore my house upon my back!\n");
+	printf("You're beat! and yet, you must alllow,");
+	printf("\nI bore my house upon my back!\n");
 }
