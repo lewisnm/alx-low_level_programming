@@ -37,7 +37,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (nunode);
 	}
 
-	while (j < (idx - 1))
+	while (j < idx)
 	{
 		temp = temp->next;
 		j++;
