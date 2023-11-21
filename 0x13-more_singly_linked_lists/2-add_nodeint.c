@@ -13,20 +13,13 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	listint_t * new_node;
 
 	new_node = (listint_t *) malloc(size of(struct listint_s));
-	if (new_node == NULL)
+	if (!new_node || !head)
 	{
 		return (NULL);
-	}
 	
-	else if (head == NULL)
-	{
-		free(new_node);
-	}
-	else 
-	{
-		new_node->next = *head;
-		new_node->n = n;
-	}
+	new_node->next = *head;
+	new_node->n = n;
+
 	head = new_node;
 	return (new_node);
 }
