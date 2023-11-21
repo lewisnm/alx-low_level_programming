@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_listint_safe -prints linked lists 
+ * print_listint_safe -prints linked lists
  * @head: pointer to list to be printed
  *
  * Return: new_node
@@ -17,7 +17,7 @@ size_t print_listint_safe(const listint_t *head)
 	temp = head;
 	while (temp)
 	{
-		printf("[%p] %d\n",(void *)temp, temp->n);
+		printf("[%p] %d\n", (void *)temp, temp->n);
 		count++;
 		temp = temp->next;
 		list = head;
@@ -26,7 +26,7 @@ size_t print_listint_safe(const listint_t *head)
 		{
 			if (temp == list)
 			{
-				printf("-> [%p] %d\n",(void *)temp, temp->n);
+				printf("-> [%p] %d\n", (void *)temp, temp->n);
 				return (count);
 			}
 			list = list->next;
