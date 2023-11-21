@@ -3,7 +3,7 @@
 /**
  * delete_nodeint_at_index - deletes a code at a specific index
  * @head: pointer to the list
- * @index: index where the code should be deleted 
+ * @index: index where the code should be deleted
  *
  * Return: 1 for succes and -1 for fail
  */
@@ -22,7 +22,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(temp);
 		return (1);
 	}
-	while (j < index -1)
+	while (j < index - 1)
 	{
 		if (!temp || !(temp->next))
 			return (-1);
