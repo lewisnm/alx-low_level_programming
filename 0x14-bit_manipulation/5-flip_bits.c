@@ -14,7 +14,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	while (exlOr > 0)
 	{
 		bitsFlipped += (exlOr & 1);
-		exOr >>= 1;
+		exlOr >>= 1;
 	}
 
 	return (bitsFlipped);
