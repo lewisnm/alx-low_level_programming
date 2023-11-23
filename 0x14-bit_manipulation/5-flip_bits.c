@@ -2,7 +2,7 @@
 
 /**
  * flip_bits - returns the no. of bits to flip to get to the nex no.
- * @n: The number 
+ * @n: The number
  * @m: The expected number to be flipped
  *
  * Return: The number of bits flipped
