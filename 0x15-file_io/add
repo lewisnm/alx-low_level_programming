@@ -1,0 +1,4 @@
+git add -A
+read -p "Input commit message:" message
+git commit -m "$message"
+git push
