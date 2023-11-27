@@ -10,7 +10,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int file_Des, return_rd, return_wr;
+	int file_Des, turn_rd, turn_wr;
 	char *sto_size;
 
 	if (filename == NULL)
@@ -22,18 +22,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	sto_size = malloc(sizeof(char) * letters + 1);
 	if (sto_size == NULL)
 		return (0);
-	return_rd = read(file_Des, sto_size, letters);
-	if (return_rd == -1)
+	turn_rd = read(file_Des, sto_size, letters);
+	if (turn_rd == -1)
 		return (0);
 
 	sto_size[letters] = '\0';
 
-	return_wr = write(STDOUT_FILENO, sto_size, return_rd);
-	if (return_wr == -1)
+	turn_wr = write(STDOUT_FILENO, sto_size, turn_rd);
+	if (turn_wr == -1)
 		return (0);
 
-	close(file_des);
+	close(file_Des);
 	free(sto_size);
-	return (return_wr);
+	return (turn_wr);
 }
-
