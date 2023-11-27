@@ -42,11 +42,11 @@ int main(int argc, char *argv[])
 	}
 	if (close(file_des1) != 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", file1), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", file_des1), exit(100);
 	}
 	if (close(file_des2) != 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", file2), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", file_des2), exit(100);
 	}
 	return (0);
 }
