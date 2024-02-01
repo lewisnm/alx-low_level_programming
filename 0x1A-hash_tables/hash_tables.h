@@ -17,4 +17,4 @@ typedef struct {
 
 hash_table_t *hash_table_create(unsigned long int size);
 
-#endif  HASH_TABLE
+#endif  /*HASH_TABLE*/
