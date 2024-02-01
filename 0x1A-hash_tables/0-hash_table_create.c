@@ -16,6 +16,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return NULL;
 	}
 
+	ht->size = size;
 	ht->table = (struct HashNode **)malloc(size * sizeof(struct HashNode*));
 	if (ht->table == NULL)
 	{
@@ -27,8 +28,5 @@ hash_table_t *hash_table_create(unsigned long int size)
 	{
 		ht->table[i] = NULL;
 	}
-
-	ht->size = size;
-
-	return ht;
+	return (ht);
 }
