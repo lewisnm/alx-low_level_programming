@@ -1,6 +1,9 @@
 #ifndef  HASH_TABLE
 #define  HASH_TABLE
 
+#include <stdio.h>
+#include <stdlib.h>
+
 struct HashNode {
     int key;
     int value;
