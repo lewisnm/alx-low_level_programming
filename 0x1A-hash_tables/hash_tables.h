@@ -12,10 +12,11 @@
  * @value: The value corresponding to a key
  * @next: A pointer to the next node of the List
  */
-typedef struct node {
-    char *key;
-    char *value;
-    struct node *next;
+typedef struct HashNode_s
+{
+     char *key;
+     char *value;
+     struct HashNode_s *next;
 } HashNode;
 
 /**
@@ -26,9 +27,10 @@ typedef struct node {
  * Each cell of this array is a pointer to the first node of a linked list,
  * because we want our HashTable to use a Chaining collision handling
  */
-typedef struct table_hash{
-    unsigned long int size;
-    struct HashNode** table;
+typedef struct table_hash
+{
+     unsigned long int size;
+     hash_node_t **array;
 } hash_table_t;
 
 hash_table_t *hash_table_create(unsigned long int size);
