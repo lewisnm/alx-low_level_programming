@@ -6,34 +6,35 @@
 #include <string.h>
 
 /**
- * struct HashNode_s - Node of a hash table
+ * struct hash_node_s - Node of a hash table
  *
  * @key: The key, string
  * The key is unique in the HashTable
  * @value: The value corresponding to a key
  * @next: A pointer to the next node of the List
  */
-typedef struct HashNode_s
+typedef struct hash_node_s
 {
      char *key;
      char *value;
-     struct HashNode_s *next;
-} HashNode;
+     struct hash_node_s *next;
+} hash_node_t;
 
 /**
- * struct - Hash table data structure
+ * struct hash_table_s - Hash table data structure
  *
  * @size: The size of the array
- * @table: An array of size @size
+ * @array: An array of size @size
  * Each cell of this array is a pointer to the first node of a linked list,
  * because we want our HashTable to use a Chaining collision handling
  */
-typedef struct table_hash
+typedef struct hash_table_s
 {
      unsigned long int size;
-     HashNode **table;
+     hash_node_t **array;
 } hash_table_t;
 
 hash_table_t *hash_table_create(unsigned long int size);
+
 
 #endif  /*HASH_TABLE*/
