@@ -13,9 +13,9 @@
  * @next: A pointer to the next node of the List
  */
 typedef struct node {
-    int key;
-    int value;
-    struct HashNode* next;
+    int *key;
+    int *value;
+    struct HashNode *next;
 }HashNode;
 
 /**
