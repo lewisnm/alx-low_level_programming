@@ -19,7 +19,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	}
 
 	ht->size = size;
-	ht->table = malloc(size * sizeof(struct HashNode*));
+	ht->table = malloc(size * sizeof(HashNode*));
 	if (ht->table == NULL)
 	{
 		free(ht);
