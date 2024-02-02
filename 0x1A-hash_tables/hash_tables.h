@@ -30,7 +30,7 @@ typedef struct HashNode_s
 typedef struct table_hash
 {
      unsigned long int size;
-     hash_node_t **array;
+     HashNode **table;
 } hash_table_t;
 
 hash_table_t *hash_table_create(unsigned long int size);
