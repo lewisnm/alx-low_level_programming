@@ -13,10 +13,10 @@
  * @next: A pointer to the next node of the List
  */
 typedef struct node {
-    int *key;
-    int *value;
+    char *key;
+    char *value;
     struct node *next;
-}HashNode;
+} HashNode;
 
 /**
  * struct - Hash table data structure
